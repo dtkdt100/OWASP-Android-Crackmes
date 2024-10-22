@@ -1,0 +1,8 @@
+Run frida:
+adb shell "su -c /data/local/tmp/frida-server-16.4.10-android-arm64"
+
+Install level:
+adb install <level>
+
+Run frida:
+frida -U -l .\level1_hooks.js -f owasp.mstg.uncrackable1
